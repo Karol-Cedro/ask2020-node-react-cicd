@@ -6,8 +6,8 @@ jobs:
     executor:
       name: node/default
     steps:
+      - working_directory: ~/ask2020-node-react-cicd/server
       - checkout
-      - working_directory: /home/server
       - node/with-cache:
           steps:
             - run: npm install
