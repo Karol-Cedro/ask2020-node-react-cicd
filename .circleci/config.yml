@@ -40,7 +40,7 @@ workflows:
         - acceptance_test_1:
             requires:
               - build
-        - acceptance_test_1:
+        - acceptance_test_2:
             requires:
               - build
         
